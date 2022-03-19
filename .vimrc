@@ -4,9 +4,10 @@
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set laststatus=2
 
-set runtimepath^=~/.vim/bundle/vim-airline/plugin/airline.vim
-set runtimepath^=~/.vim/bundle/vim-signify/plugin/signify.vim
+" set runtimepath^=~/.vim/bundle/vim-airline/plugin/airline.vim
+" set runtimepath^=~/.vim/bundle/vim-signify/plugin/signify.vim
 
 "===========================
 " FabioRosado settings
@@ -43,9 +44,16 @@ let g:signify_update_on_bufenter    = 0
 let g:signify_update_on_focusgained = 1
 
 " Settings for Code Stats
+" let g:codestats_api_key = '<fill me>'
 call plug#begin('~/.vim/plugged')
 
-let g:codestats_api_key = 'SFMyNTY.Um1GaWFXOVNiM05oWkc4PSMjT1RneU9BPT0.Er5pbpbUtmElfaz_BXZvTAYxL0Yq1wH_zQlxQ8STdEc'
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'frazrepo/vim-rainbow'
+Plug 'vim-syntastic/syntastic'
+
 
 " Optional: configure vim-airline to display status
 "let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%{CodeStatsXp()}'])
@@ -53,7 +61,7 @@ let g:codestats_api_key = 'SFMyNTY.Um1GaWFXOVNiM05oWkc4PSMjT1RneU9BPT0.Er5pbpbUt
 "===========================
 " Start pathogen
 "===========================
-execute pathogen#infect()
-call pathogen#helptags()
+" execute pathogen#infect()
+" call pathogen#helptags()
 
 call plug#end()

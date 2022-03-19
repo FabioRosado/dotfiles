@@ -20,3 +20,9 @@ gclone() {
           git clone "$1" && cd "$(basename "$1" .git)"
 }
 
+# Coiled Related laziness
+alias uvicorn="ca coiled && uvicorn cloud.asgi:application --host=0.0.0.0 --port=8000 --reload --ws-max-size=10_000_000_000 --reload-dir backends --reload-dir cloud"
+alias worker="ca coiled && celery -A cloud worker -l INFO"
+alias beat="ca coiled && celery -A cloud beat -l INFO"
+alias open=xdg-open
+
