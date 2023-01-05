@@ -1,0 +1,23 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[package]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[directory]
+truncation_length = 4
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = " "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+#[git_state]
+#format = '[\($state( $progress_current of $progress_total)\)]($style) '
+

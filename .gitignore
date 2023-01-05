@@ -1,0 +1,9 @@
+*.bk
+.env
+*.env
+*/.env
+TODO
+NOTES
+
+.DS_Store
+*/.DS_Store

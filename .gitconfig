@@ -1,0 +1,24 @@
+[user]
+    name = FabioRosado
+    email = 
+    signingkey = 
+[colors]
+    ui = true
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+[credentials]
+    helper = store
+[maintenance]
+	repo = /Users/fabiorosado/github/daily-notes
+	repo = /Users/fabiorosado/github/fabiorosado.dev
+	repo = /Users/fabiorosado/github/opsdroid
+	repo = /Users/fabiorosado/github/zsh-snap
+[init]
+	defaultBranch = main
+[push]
+    autoSetupRemote = true
+[pull]
+    rebase = true
+[commit]
+    gpgsign = true
